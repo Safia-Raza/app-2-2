@@ -41,12 +41,13 @@ def _run_stage(
         markdown=True,
     )
 
-    crew = Crew(
+   crew = Crew(
         agents=[agent],
         tasks=[task],
         process=Process.sequential,
         verbose=False,
         cache=True,
+        respect_context_window=True,
     )
     output = crew.kickoff()
     status_callback(name, "Completed", progress)
