@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+buildpay_history.db
+.streamlit/secrets.toml
+.env
+.DS_Store
