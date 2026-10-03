@@ -7,7 +7,7 @@ def get_llm():
     if not api_key:
         raise RuntimeError('GROQ_API_KEY is not configured. Add it to Streamlit Secrets.')
     return LLM(
-        model='groq/openai/gpt-oss-120b',
+        model='groq/llama-3.3-70b-versatile',
         api_key=api_key,
         temperature=0.1,
     )
